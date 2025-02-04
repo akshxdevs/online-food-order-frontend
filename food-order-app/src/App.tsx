@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes,Route } from "react-router-dom";
-import { Signup } from "./Signup";
-import { Signin } from "./Signin";
-import { HomePage } from "./HomePage";
-import { Cart } from "./Cart";
-import { Checkout } from "./Checkout";
-import { Payment } from "./Payment";
-import { MainPage } from "./MainPage";
-import { Wallet } from "./Wallet";
+import { Signin } from "./Pages/Signin";
+import { HomePage } from "./Pages//HomePage";
+import { Cart } from "./Pages//Cart";
+import { Checkout } from "./Pages//Checkout";
+import { Payment } from "./Pages//Payment";
+import { MainPage } from "./Pages//MainPage";
+import { Wallet } from "./Pages//Wallet";
+import { Signup } from "./Pages/Signup";
 function App() {
   return (
     <div>

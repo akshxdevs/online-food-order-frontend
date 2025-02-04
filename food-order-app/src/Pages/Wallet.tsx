@@ -21,7 +21,7 @@ export const Wallet = () => {
         </div>
     }
     const getBalance = () => {
-        axios.post("http://localhost:3000/api/m3/account/balance",{
+        axios.post("https://be.akshxdevs.com/api/m3/account/balance",{
             userId
         }).then((res)=>{
             const data = res.data
@@ -38,7 +38,7 @@ export const Wallet = () => {
     const navigate = useNavigate();
     const handleWallet = async() =>{
         console.log("wallet");
-        const res = await axios.post("http://localhost:3000/api/m3/user/wallet/pin",{
+        const res = await axios.post("https://be.akshxdevs.com/api/m3/user/wallet/pin",{
             userId,
             pin
         })
@@ -49,7 +49,7 @@ export const Wallet = () => {
 
     const amount = totalPrice ? parseFloat(totalPrice) : 0;
     const handlePayment = async() => {
-        await axios.post("http://localhost:3000/api/m3/account/transfer",{
+        await axios.post("https://be.akshxdevs.com/api/m3/account/transfer",{
             amount,
             userId  
         }).then((res)=>{
@@ -72,7 +72,7 @@ export const Wallet = () => {
     }
 
     const handleCreatePin = () => {
-        axios.post("http://localhost:3000/api/m3/user/wallet",{
+        axios.post("https://be.akshxdevs.com/wallet",{
             userId,
             pin:newPin
         }).then((res)=>{
